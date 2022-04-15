@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script>
+        function mail(){
+            
+            window.location.assign("mailto:pgpritamghoshpg@gmail.com")
+
+        }
+        function linkedin(){
+            
+            window.location.assign("https://www.linkedin.com/in/pritam-ghosh-55b34520b/")
+
+        }
+        function github(){
+            
+            window.location.assign("https://github.com/pritamg7")
+
+        }
+        function mobile(){
+            
+            window.location.assign("tel:+919732983806")
+
+        }
+        function changeimage(){
+            var image=document.getElementById('myimage')
+            if(image.src.match("blank.png")){
+                image.src="pic.jpg";
+            }
+            
+        }
+
+    </script>
+    
+</head>
+<body>
+    <img id="myimage" onclick="changeimage()" src="blank.png" alt="loading" style="border-radius: 50%; width: 150px; height: 150px;"">
+    <h1>Pritam Ghosh</h1>
+    <button type="button" onclick="mail()">Mail</button>
+    <hr>
+    <h2><u>About</u>:</h2>
+    <p>As a fresher, I would like to secure a position in the organization and contribute my skills 
+        towards the organization and also hone my skills and use them to my best potential so that I 
+        can work towards the productivity of the organization with dedication.</p>
+    <hr>
+    <h2><u>Personal Details</u>:</h2>
+    <p><b>Date of Birth</b>: February 19,2000</p>
+    <p><b>Address</b>: Bhandergacha,Sendanga,West Bengal,743272</p>
+    <hr>
+    <h2><u>Social</u>:</h2>
+    <p><button type="button"  onclick="linkedin()" >Linkedin</button>
+        <button type="button" onclick="github()">Github</button>
+        <button type="button" onclick="mobile()">Mobile</button>
+        
+    </p>
+    <hr>
+    <h2><u>Education</u>:</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>Course</th>
+            <th>Year</th>
+            <th>Institute Name</th>
+            <th>Results</th>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>2022</td>
+            <td>TINT</td>
+            <td>8.59</td>
+        </tr>
+        <tr>
+            <td>Higher Secondary</td>
+            <td>2017</td>
+            <td>CPHS</td>
+            <td>82.6</td>
+        </tr>
+        <tr>
+            <td>Secondary</td>
+            <td>2015</td>
+            <td>CPHS</td>
+            <td>90.7</td>
+        </tr>
+    </table>
+    <hr>
+    <h2><u>Technical Skills</u>:</h2>
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>Git & Github</li>
+    </ul>
+    <hr>
+    <h2><u>Certifications</u>:</h2>
+    <ul>
+        <li>PYTHON: DATACAMP, COURSERA, NPTEL</li>
+        <li>SQL: DATACAMP</li>
+    </ul>
+    <hr>
+    <h2><u>Projects</u>:</h2>
+    <ul>
+        <li>Django based Quiz App</li>
+        <li>AI Project on Dress Suggestion from Previous Purchases</li>
+    </ul>
+    <hr>
+    <h2><u>Hobbies</u>:</h2>
+    <ul>
+        <li>Playing Games</li>
+        <li>Coding</li>
+        <li>Watching Anime & TV Series</li>
+    </ul>
+    <hr>
+    
+</body>
+</html>
